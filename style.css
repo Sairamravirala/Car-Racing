@@ -1,0 +1,56 @@
+     *{ 
+    margin: 0;
+    padding:0;
+}
+.sky{
+      height:100vh;
+      width:100%;
+      background-image:url(road.jpg);
+      background-size:cover;
+      position:absolute;
+      animation: roadmove linear 0s infinite;
+}
+.car{
+      height:223px;
+      width:400px;
+      background-image:url(car_body.png);
+      background-size:cover;
+      background-repeat: no-repeat;
+      position:absolute;
+      left:340px;
+      top:55vh;
+      animation: carmove linear 0s infinite;
+      
+}
+.wheel1 img{     
+      width:440px;
+      position:relative;
+      top:-19px;
+      left:217px;
+      animation:wheelRotation linear .3s infinite;
+}
+.wheel2 img{
+          width:440px;
+          position:relative;
+          top:-335px;
+          left:-9px;
+          animation:wheelRotation linear .3s infinite;
+}
+   @keyframes wheelRotation
+{
+      100%{
+            transform: rotate(360deg);
+      }
+}
+@keyframes carmove
+{
+      100%{
+            transform: translateX(500vw);
+      }
+}
+@keyframes roadmove
+{
+      100%{
+            transform: translateX(-500vw);
+      }
+}
